@@ -107,6 +107,8 @@ body {
   align-items: center;
 }
 
+.hero-text { min-width: 0; }
+
 .eyebrow {
   margin: 0 0 0.75rem;
   font-size: 0.82rem;
