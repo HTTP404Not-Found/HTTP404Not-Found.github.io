@@ -1,0 +1,9 @@
+# 網站不列入搜尋引擎索引
+# 說明：本網站為課堂作業作品，僅供作業審查者透過公開網址直接開啟。
+# 使用者仍可完全正常地以網址列存取本站（robots.txt 僅影響搜尋引擎爬蟲索引）。
+User-agent: *
+Disallow: /
+
+# 允許常見爬蟲仍可讀取 robots.txt 本身
+User-agent: Googlebot
+Disallow: /
