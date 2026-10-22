@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yhw 的個人網站｜閱讀 paper 的日常</title>
+<meta name="description" content="yhw（匿名 ID：112021073）的個人網站：自我介紹、paper 閱讀筆記、公開作品與履歷。">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">yhw</span>
+      <span class="brand-text">個人網站</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">關於我</a>
+      <a href="#paper">Paper</a>
+      <a href="#skills">技能</a>
+      <a href="#resume">履歷</a>
+      <a href="#links">連結</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首頁主視覺 -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">網站系統建置與規劃｜作業 1</p>
+        <h1>Hi, I'm <span class="nick">yhw</span></h1>
+        <p class="identity">
+          暱稱：<strong>yhw</strong>　·　匿名 ID：<strong>112021073</strong>
+        </p>
+        <p class="tagline">我喜歡讀 paper，也喜歡把讀過的東西整理成看得懂的網頁。</p>
+        <p class="hero-actions">
+          <a class="btn" href="#about">認識我</a>
+          <a class="btn btn-ghost" href="#paper">看看我在讀什麼</a>
+        </p>
+      </div>
+      <figure class="hero-figure">
+        <img src="./assets/paper-stack.svg" alt="插圖：一疊印著條狀文字的 paper，上面放著放大鏡" width="520" height="360">
+        <figcaption>插圖：由 AI 助理協助以 SVG 程式碼繪製，非攝影或他人作品。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ① 姓名（暱稱）② 學號（匿名 ID）③ 100 字以上自介 -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="section-title">關於我</h2>
+      <div class="card about-card">
+        <p class="badge-row">
+          <span class="badge">姓名（暱稱）：yhw</span>
+          <span class="badge">學號（匿名 ID）：112021073</span>
+        </p>
+        <p class="intro">
+          我是 yhw，網路上的暱稱就叫 yhw，使用的匿名 ID 是 112021073。目前就讀於亞洲大學資訊相關科系，平常最常做的事情是讀 paper。我喜歡把一篇論文從摘要、方法一路讀到實驗結果，再用自己的話重寫一遍，藉此確認自己真的懂到哪一步；這個習慣讓我做起專案時，總是先找相關 paper 當起點，而不是憑直覺硬寫。閒暇時我會動手做小專案，例如把爬蟲蒐集來的資料整理成儀表板、把讀過的 paper 做成可公開瀏覽的筆記網站，也會研究前後端分離與雲端部署的流程，試著讓作品真的公開在網路上、被人看到。我對新技術保持好奇，也享受把複雜的東西整理成別人看得懂的樣子，目前正在加深前端撰寫與網站部署的實作能力。
+        </p>
+        <p class="note">
+          以上自介共 200 字以上（不含姓名與學號）。網站僅公開暱稱與匿名 ID，真實姓名與學號另見繳交文件。
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card mini">
+          <h3>讀 paper</h3>
+          <p>先看摘要與結論，再回頭確認方法與假設，最後寫下自己重寫過的一段摘要。</p>
+        </article>
+        <article class="card mini">
+          <h3>做專案</h3>
+          <p>把讀到的做法動手實作，做成能公開瀏覽的小工具，順便練習版面與部署。</p>
+        </article>
+        <article class="card mini">
+          <h3>整理與紀錄</h3>
+          <p>寫成筆記、畫成流程圖、做成網頁，讓下一次的自己不必從頭開始。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper 主題 -->
+  <section id="paper" class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-title">關於 Paper</h2>
+      <p class="lead">
+        對我來說，paper 不只是論文檔案，更是一套可以拆解、驗證、再改寫的方法。以下是我最近固定追蹤的研究主題（僅列主題方向，不複製他人論文內容或圖片）。
+      </p>
+
+      <div class="paper-layout">
+        <figure class="figure">
+          <img src="./assets/paper-flow.svg" alt="插圖：paper 到筆記到專案的三段流程圖" width="560" height="320">
+          <figcaption>插圖：由 AI 助理協助以 SVG 程式碼繪製，非攝影或他人作品。</figcaption>
+        </figure>
+
+        <ol class="paper-list">
+          <li>
+            <h3>分散式系統與一致性</h3>
+            <p>關注在節點失效時，資料要怎麼保持可被信任的一致性，以及相關協定的取捨。</p>
+          </li>
+          <li>
+            <h3>網頁與前端效能</h3>
+            <p>研究載入速度、資源最佳化與量測方式，讓做出來的頁面在真實裝置上跑得順。</p>
+          </li>
+          <li>
+            <h3>靜態網站與部署流程</h3>
+            <p>理解 Git 版本控制、CI 與託管平台的分工，讓作品能一鍵發布到公開網址。</p>
+          </li>
+          <li>
+            <h3>可用性與資安基本功</h3>
+            <p>提醒自己不要把憑證、密碼或他人個資放進公開的儲存庫，學會先檢查再發布。</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <h2 class="section-title">技能與工具</h2>
+      <ul class="tags">
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git / GitHub</li>
+        <li>GitHub Pages</li>
+        <li>Cloudflare Pages</li>
+        <li>響應式版面</li>
+        <li>網站效能檢測</li>
+        <li>API 串接</li>
+        <li>資料視覺化</li>
+      </ul>
+      <p class="note">
+        清單代表我正在練習與使用中的技術，其中雲端部署與前端版面仍在累積經驗。
+      </p>
+    </div>
+  </section>
+
+  <!-- 加分：完整履歷（學歷／經歷／成果／聯絡方式） -->
+  <section id="resume" class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-title">履歷</h2>
+      <p class="lead">
+        <strong>本節部分內容為課程作業用途之虛構示範</strong>（虛構項目已於各條目標示，詳見繳交文件的虛構說明）。
+      </p>
+
+      <div class="resume-grid">
+        <article class="card">
+          <h3>學歷</h3>
+          <ul>
+            <li>亞洲大學 資訊相關科系　學士（112 學年度入學，就讀中）</li>
+            <li>「雲端開發與部署實務」線上修讀證照（<span class="fictional">虛構</span>）</li>
+            <li>「網頁效能最佳化」工作坊（<span class="fictional">虛構</span>）</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>經歷</h3>
+          <ul>
+            <li>系學會網站維護（<span class="fictional">虛構</span>）：負責活動頁更新與報名表單串接</li>
+            <li>社團活動網頁設計接案（<span class="fictional">虛構</span>）：完成 3 個小型活動網站</li>
+            <li>校園媒體社技術組（<span class="fictional">虛構</span>）：協助剪輯流程與素材整理</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>成果</h3>
+          <ul>
+            <li>本網站：同時發布於 GitHub Pages 與 Cloudflare Pages，內容一致</li>
+            <li>公開的 paper 閱讀筆記網站（<span class="fictional">虛構</span>）</li>
+            <li>校內課程作業：小型資料儀表板（<span class="fictional">虛構</span>）</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>聯絡方式</h3>
+          <ul>
+            <li>學校信箱：112021073@live.asia.edu.tw</li>
+            <li>GitHub：<a href="https://github.com/HTTP404Not-Found" target="_blank" rel="noopener">github.com/HTTP404Not-Found</a></li>
+            <li>本頁不放置私人電話與住址</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 兩個平台的公開網址 -->
+  <section id="links" class="section">
+    <div class="wrap">
+      <h2 class="section-title">連結</h2>
+      <div class="link-grid">
+        <a class="link-card" href="https://http404not-found.github.io/" target="_blank" rel="noopener">
+          <span class="link-label">GitHub Pages</span>
+          <span class="link-url">https://http404not-found.github.io/</span>
+        </a>
+        <a class="link-card" href="https://yhw-site.pages.dev/" target="_blank" rel="noopener">
+          <span class="link-label">Cloudflare Pages</span>
+          <span class="link-url">https://yhw-site.pages.dev/</span>
+        </a>
+        <a class="link-card" href="https://github.com/HTTP404Not-Found/HTTP404Not-Found.github.io" target="_blank" rel="noopener">
+          <span class="link-label">GitHub 儲存庫</span>
+          <span class="link-url">github.com/HTTP404Not-Found/HTTP404Not-Found.github.io</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 yhw（匿名 ID：112021073）｜本站為課程作業作品。</p>
+    <p class="footer-note">
+      AI 使用揭露：本頁的版面結構、CSS 與文字內容由 AI 助理（Hermes）協助產生，並由本人自行修改與編修；
+      頁面內插圖皆為以 SVG 程式碼繪製的示意圖，非攝影照片、非他人作品，亦非 AI 產生的寫實影像。
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
