@@ -286,8 +286,16 @@ figcaption {
 }
 
 .paper-list h3 {
-  margin: 0 0 0.3rem;
+  margin: 0 0 0.15rem;
   font-size: 1.03rem;
+}
+
+.paper-meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .paper-list p {
